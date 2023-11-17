@@ -13,17 +13,17 @@ const Footer = () => {
           <h3 className="text-xl font-semibold text-white mb-3">Menu</h3>
           <hr className={style.hr} />
 
-          <div className="flex flex-col  text-white ">
-            <Link className="my-2" href="">
+          <div className="flex flex-col  text-white hover:text-g">
+            <Link className="my-2 hover:text-gray-300" href="">
               How It's Work
             </Link>
-            <Link className="my-2" href="">
+            <Link className="my-2 hover:text-gray-300" href="">
               Get Started
             </Link>
-            <Link className="my-2" href="">
+            <Link className="my-2 hover:text-gray-300" href="">
               pricing
             </Link>
-            <Link className="my-2" href="">
+            <Link className="my-2 hover:text-gray-300" href="">
               Contact
             </Link>
           </div>
@@ -35,16 +35,16 @@ const Footer = () => {
           <hr className={style.hr} />
 
           <div className="flex flex-col  text-white ">
-            <Link className="my-2" href="">
+            <Link className="my-2 hover:text-gray-300" href="">
               How It's Work
             </Link>
-            <Link className="my-2" href="">
+            <Link className="my-2 hover:text-gray-300" href="">
               Get Started
             </Link>
-            <Link className="my-2" href="">
+            <Link className="my-2 hover:text-gray-300" href="">
               pricing
             </Link>
-            <Link className="my-2" href="">
+            <Link className="my-2 hover:text-gray-300" href="">
               Contact
             </Link>
           </div>
@@ -57,16 +57,16 @@ const Footer = () => {
           <hr className={style.hr} />
 
           <div className="flex flex-col  text-white ">
-            <Link className="my-2" href="">
+            <Link className="my-2 hover:text-gray-300" href="">
               How It's Work
             </Link>
-            <Link className="my-2" href="">
+            <Link className="my-2 hover:text-gray-300" href="">
               Get Started
             </Link>
-            <Link className="my-2" href="">
+            <Link className="my-2 hover:text-gray-300" href="">
               pricing
             </Link>
-            <Link className="my-2" href="">
+            <Link className="my-2 hover:text-gray-300" href="">
               Contact
             </Link>
           </div>
@@ -75,21 +75,29 @@ const Footer = () => {
         <div class="basis-1/4 text-white">
           <h3 className="text-xl font-semibold text-white mb-3">Social</h3>
           <hr className={style.hr} />
-          <div className=" flex items-center my-2">
+          <div className=" flex items-center my-5">
             <FaFacebookSquare />
-            <Link href="">Facebook</Link>
+            <Link className=" hover:text-gray-300" href="">
+              Facebook
+            </Link>
           </div>
           <div className=" flex items-center my-2">
             <FaXTwitter />
-            <Link href="">Twitter</Link>
+            <Link className=" hover:text-gray-300" href="">
+              Twitter
+            </Link>
           </div>
           <div className=" flex items-center my-2">
             <FaLinkedin />
-            <Link href="">Linkedin</Link>
+            <Link className=" hover:text-gray-300" href="">
+              Linkedin
+            </Link>
           </div>
           <div className=" flex items-center my-2">
             <FcGoogle />
-            <Link href="">Google</Link>
+            <Link className=" hover:text-gray-300" href="">
+              Google
+            </Link>
           </div>
         </div>
       </div>
