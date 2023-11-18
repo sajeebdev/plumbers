@@ -75,25 +75,25 @@ const Footer = () => {
         <div class="basis-1/4 text-white">
           <h3 className="text-xl font-semibold text-white mb-3">Social</h3>
           <hr className={style.hr} />
-          <div className=" flex items-center my-5">
+          <div className=" flex items-center my-4">
             <FaFacebookSquare />
             <Link className=" hover:text-gray-300" href="">
               Facebook
             </Link>
           </div>
-          <div className=" flex items-center my-2">
+          <div className=" flex items-center my-4">
             <FaXTwitter />
             <Link className=" hover:text-gray-300" href="">
               Twitter
             </Link>
           </div>
-          <div className=" flex items-center my-2">
+          <div className=" flex items-center my-4">
             <FaLinkedin />
             <Link className=" hover:text-gray-300" href="">
               Linkedin
             </Link>
           </div>
-          <div className=" flex items-center my-2">
+          <div className=" flex items-center my-4">
             <FcGoogle />
             <Link className=" hover:text-gray-300" href="">
               Google

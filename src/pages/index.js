@@ -4,6 +4,8 @@ import Layout from "@/components/shared/layout/layout";
 import Mostpopular from "@/components/compo/mostPopular/mostpopular";
 import Cityarea from "@/components/compo/cityArea/cityarea";
 import Statearea from "@/components/compo/stateArea/statearea";
+import Freequotes from "@/components/free quotes/freeQuotes";
+import Genericgallery from "@/components/GenericGallery/genericgallery";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,8 +13,10 @@ export default function Home() {
   return (
     <Layout>
       <Mostpopular></Mostpopular>
+      <Freequotes></Freequotes>
       <Cityarea></Cityarea>
       <Statearea></Statearea>
+      <Genericgallery></Genericgallery>
     </Layout>
   );
 }

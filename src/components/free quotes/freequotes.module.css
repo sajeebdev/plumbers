@@ -1,0 +1,9 @@
+.hr {
+  color: rgb(103, 100, 100);
+  background: rgb(145, 139, 139);
+  height: 1.5px;
+  width: 70%;
+  border: none;
+  margin: 0 auto;
+  margin-top: 20px;
+}
