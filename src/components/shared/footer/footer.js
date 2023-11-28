@@ -3,100 +3,68 @@ import React from "react";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
-import { FcGoogle } from "react-icons/fc";
+import { FaInstagramSquare } from "react-icons/fa";
 import style from "./footer.module.css";
+import { BiSolidPhoneCall } from "react-icons/bi";
+import { MdEmail } from "react-icons/md";
+import { IoLogoWhatsapp } from "react-icons/io";
+
 const Footer = () => {
   return (
     <div className=" bg-cyan-900">
-      <div class="flex sm:flex-row flex-col sm:items-center itemx-start sm:px-40 p-10 ">
-        <div class="basis-1/4">
-          <h3 className="text-xl font-semibold text-white mb-3">Menu</h3>
-          <hr className={style.hr} />
+      <div class="w-[1280px] m-auto pt-16 mt-16  grid grid-cols-3 items-center gap-10">
+        <div class="w-[320px] text-white text-start p-2">
+          <img className="block m-auto" src="/logo.png" />
+          <p className="">
+            {" "}
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
+            magni voluptates ea omnis nisi eveniet. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Culpa, magni voluptates
+          </p>
+        </div>
 
-          <div className="flex flex-col  text-white hover:text-g">
-            <Link className="my-2 hover:text-gray-300" href="">
-              How It's Work
-            </Link>
-            <Link className="my-2 hover:text-gray-300" href="">
-              Get Started
-            </Link>
-            <Link className="my-2 hover:text-gray-300" href="">
-              pricing
-            </Link>
-            <Link className="my-2 hover:text-gray-300" href="">
-              Contact
+        <div class="text-white mx-auto pl-20">
+          <h3 className="text-xl font-semibold text-white mb-3">Contact Us</h3>
+          <hr className={style.hr} />
+          <div className=" flex items-center gap-2 my-4">
+            <BiSolidPhoneCall />
+            <Link className=" hover:text-gray-300" href="">
+              017985632000
             </Link>
           </div>
-        </div>
-        <div class="basis-1/4">
-          <h3 className="text-xl font-semibold text-white mb-3">
-            Local Plumbers
-          </h3>
-          <hr className={style.hr} />
-
-          <div className="flex flex-col  text-white ">
-            <Link className="my-2 hover:text-gray-300" href="">
-              How It's Work
+          <div className=" flex items-center  gap-2 my-4">
+            <MdEmail />
+            <Link className=" hover:text-gray-300" href="">
+              contactus@gmail.com
             </Link>
-            <Link className="my-2 hover:text-gray-300" href="">
-              Get Started
-            </Link>
-            <Link className="my-2 hover:text-gray-300" href="">
-              pricing
-            </Link>
-            <Link className="my-2 hover:text-gray-300" href="">
-              Contact
+          </div>
+          <div className=" flex items-center  gap-2 my-4">
+            <IoLogoWhatsapp />
+            <Link className=" hover:text-gray-300" href="">
+              017985632000
             </Link>
           </div>
         </div>
 
-        <div class="basis-1/4">
-          <h3 className="text-xl font-semibold text-white mb-3">
-            Useful Links
-          </h3>
-          <hr className={style.hr} />
-
-          <div className="flex flex-col  text-white ">
-            <Link className="my-2 hover:text-gray-300" href="">
-              How It's Work
-            </Link>
-            <Link className="my-2 hover:text-gray-300" href="">
-              Get Started
-            </Link>
-            <Link className="my-2 hover:text-gray-300" href="">
-              pricing
-            </Link>
-            <Link className="my-2 hover:text-gray-300" href="">
-              Contact
-            </Link>
-          </div>
-        </div>
-
-        <div class="basis-1/4 text-white">
+        <div class="text-white ml-auto px-2">
           <h3 className="text-xl font-semibold text-white mb-3">Social</h3>
           <hr className={style.hr} />
-          <div className=" flex items-center my-4">
+          <div className=" flex items-center gap-2 my-4">
             <FaFacebookSquare />
             <Link className=" hover:text-gray-300" href="">
               Facebook
             </Link>
           </div>
-          <div className=" flex items-center my-4">
+          <div className=" flex items-center gap-2 my-4">
             <FaXTwitter />
             <Link className=" hover:text-gray-300" href="">
               Twitter
             </Link>
           </div>
-          <div className=" flex items-center my-4">
-            <FaLinkedin />
+          <div className=" flex items-center gap-2 my-4">
+            <FaInstagramSquare />
             <Link className=" hover:text-gray-300" href="">
-              Linkedin
-            </Link>
-          </div>
-          <div className=" flex items-center my-4">
-            <FcGoogle />
-            <Link className=" hover:text-gray-300" href="">
-              Google
+              Instagram
             </Link>
           </div>
         </div>

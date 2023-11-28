@@ -7,6 +7,8 @@ import Statearea from "@/components/compo/stateArea/statearea";
 import Freequotes from "@/components/free quotes/freeQuotes";
 import Genericgallery from "@/components/GenericGallery/genericgallery";
 import Banner from "@/components/banner/banner";
+import MyGalleries from "@/components/gallery/gallery";
+import Smallbanner from "@/components/smallbanner/smallbanner";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +20,8 @@ export default function Home() {
       <Freequotes></Freequotes>
       <Cityarea></Cityarea>
       <Statearea></Statearea>
+      <MyGalleries />
+      {/* <Smallbanner /> */}
       <Genericgallery></Genericgallery>
     </Layout>
   );
