@@ -53,7 +53,9 @@ const Header = () => {
           </div>
           <div>
             <ul className="flex items-center justify-between gap-10 text-base font-semibold">
-              <li>How It Works</li>
+              <li>
+                <Link href={"/how-it-works"}>How It Works</Link>
+              </li>
               <li>Get Listed</li>
               <li>
                 <Link href={"/categories"}>Category Search</Link>
@@ -61,8 +63,12 @@ const Header = () => {
               <li>
                 <Link href={"/all-cities"}>All Cities</Link>
               </li>
-              <li>Blogs</li>
-              <li>About</li>
+              <li>
+                <Link href={"/blogs"}>Blogs</Link>
+              </li>
+              <li>
+                <Link href={"/about"}>About</Link>
+              </li>
               <li>Contact</li>
 
               <li className="flex items-center  rounded gap-2 duration-300 ease-in-out">

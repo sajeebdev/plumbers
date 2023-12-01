@@ -4,7 +4,7 @@ import { TbPhoneCall } from "react-icons/tb";
 import React from "react";
 import { useRouter } from "next/router";
 
-const CityData = () => {
+const StateDate = () => {
   const router = useRouter();
 
   return (
@@ -592,4 +592,4 @@ const CityData = () => {
   );
 };
 
-export default CityData;
+export default StateDate;

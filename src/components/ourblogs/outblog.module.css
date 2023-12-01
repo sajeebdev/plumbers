@@ -1,0 +1,22 @@
+.hr {
+  color: rgb(103, 100, 100);
+  background: rgb(145, 139, 139);
+  height: 1.5px;
+  width: 30%;
+  border: none;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.button {
+  background-color: red;
+  padding: 10px 40px;
+  border-radius: 20px;
+  color: white;
+}
+:hover.button {
+  background-color: blue;
+  transform: 0.5s;
+}
+.img {
+  height: 220px;
+}
