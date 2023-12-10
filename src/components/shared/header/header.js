@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { IoSearchSharp } from "react-icons/io5";
+import { IoLocationSharp, IoSearchSharp } from "react-icons/io5";
 import { RxCross2 } from "react-icons/rx";
 import data from "../../../../public/city.json";
 import Link from "next/link";
+import style from "./header.module.css";
 
 const Header = () => {
   const [isNavbarVisible, setNavbarVisible] = useState(true);
@@ -20,21 +21,23 @@ const Header = () => {
     };
   }, []);
 
-  const [searchTerm, setSearchTerm] = useState("");
   const [searchResults, setSearchResults] = useState([]);
-
+  const [showSearch, setShowSearch] = useState(false);
   const handleSearch = (e) => {
-    e.preventDefault();
+    if (e.length == 0) {
+      setShowSearch(false);
+      return;
+    }
+
     const filteredResults = data.filter((item) => {
       return (
-        item.zip.toString().includes(searchTerm) ||
-        item.city.toLowerCase().includes(searchTerm.toLowerCase())
+        item.zip.toString().includes(e) ||
+        item.city.toLowerCase().includes(e.toLowerCase())
       );
     });
     setSearchResults(filteredResults);
+    setShowSearch(true);
   };
-
-  console.log(searchResults);
 
   return (
     <div className="fixed top-0 w-full z-50">
@@ -52,7 +55,9 @@ const Header = () => {
             </Link>
           </div>
           <div>
-            <ul className="flex items-center justify-between gap-10 text-base font-semibold">
+            <ul
+              className={` flex items-center justify-between gap-10 text-base font-semibold `}
+            >
               <li>
                 <Link href={"/how-it-works"}>How It Works</Link>
               </li>
@@ -69,17 +74,19 @@ const Header = () => {
               <li>
                 <Link href={"/about"}>About</Link>
               </li>
-              <li>Contact</li>
+              <li>
+                <Link href={"/contact"}>Contact</Link>
+              </li>
 
               <li className="flex items-center  rounded gap-2 duration-300 ease-in-out">
                 {search && (
-                  <form onSubmit={handleSearch}>
-                    <input
-                      className={`bg-white border border-cyan-800 rounded px-2 py-1 w-[200px] ease-in-out duration-300 text-sm text-black `}
-                      placeholder="Search by ZIP/City"
-                      onChange={(e) => setSearchTerm(e.target.value)}
-                    />
-                  </form>
+                  // <form onSubmit={handleSearch}>
+                  <input
+                    className={`bg-white border border-cyan-800 rounded px-2 py-1 w-[200px] ease-in-out duration-300 text-sm text-black `}
+                    placeholder="Search by ZIP/City"
+                    onChange={(e) => handleSearch(e.target.value)}
+                  />
+                  // </form>
                 )}
                 {!search ? (
                   <IoSearchSharp
@@ -91,6 +98,36 @@ const Header = () => {
                     className="cursor-pointer"
                     onClick={() => setSearch(!search)}
                   />
+                )}
+
+                {showSearch && (
+                  <div className={`${style.dropdownContent} sm:w-[200px]`}>
+                    {searchResults?.length == 0 ? (
+                      "No Result Found"
+                    ) : (
+                      <>
+                        {searchResults?.slice(0, 10).map((data, id) => (
+                          <div
+                            className="flex items-center text-black gap-2 m-auto"
+                            key={id}
+                          >
+                            <IoLocationSharp />
+                            <Link
+                              className="w-[160px] mt-2"
+                              href={`/city/${data?.zip?.toString()}-${
+                                data?.city
+                              }-${data?.state}`}
+                            >
+                              {data.city},{" "}
+                              <span className="uppercase">
+                                {data?.state?.slice(0, 2)}
+                              </span>
+                            </Link>
+                          </div>
+                        ))}{" "}
+                      </>
+                    )}
+                  </div>
                 )}
               </li>
             </ul>

@@ -28,16 +28,14 @@ const AllCities = () => {
     };
   }, []);
 
-  const [searchTerm, setSearchTerm] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const [showSearch, setShowSearch] = useState(false);
 
   const handleSearch = (e) => {
-    e.preventDefault();
     const filteredResults = initialData.filter((item) => {
       return (
-        item.zip.toString().includes(searchTerm) ||
-        item.city.toLowerCase().includes(searchTerm.toLowerCase())
+        item.zip.toString().includes(e) ||
+        item.city.toLowerCase().includes(e.toLowerCase())
       );
     });
     setSearchResults(filteredResults);
@@ -52,13 +50,13 @@ const AllCities = () => {
             <div className="px-16 flex justify-between items-center">
               <h2 className="text-2xl font-bold mb-5">Most Popular Cities</h2>
               <div className="flex items-center border bg-red-500 rounded">
-                <form onSubmit={handleSearch}>
-                  <input
-                    className={`bg-white border border-cyan-800 rounded px-2 py-1 w-[200px] ease-in-out duration-300 text-sm text-black `}
-                    placeholder="Search by ZIP/City"
-                    onChange={(e) => setSearchTerm(e.target.value)}
-                  />
-                </form>
+                {/* <form onSubmit={handleSearch}> */}
+                <input
+                  className={`bg-white border border-cyan-800 rounded px-2 py-1 w-[200px] ease-in-out duration-300 text-sm text-black `}
+                  placeholder="Search by ZIP/City"
+                  onChange={(e) => handleSearch(e.target.value)}
+                />
+                {/* </form> */}
                 {showSearch ? (
                   <RxCross2
                     className="cursor-pointer  mx-2 text-white"
