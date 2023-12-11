@@ -1,112 +1,23 @@
 import React from "react";
 import style from "./outblog.module.css";
+import Link from "next/link";
 
-const OurBlogs = () => {
+const OurBlogs = ({ blogs }) => {
   return (
-    <div className="w-[1280px] m-auto pt-28">
-      <h3 className="text-center text-4xl">
-        Our Blogs
-        <hr className={style.hr} />
-      </h3>
+    <div className="sm:w-[1280px] m-auto ">
       <div class="grid sm:grid-cols-4 grid-cols-1 gap-4 my-5 ">
-        <div className="p-2 border bg-white  rounded hover:shadow-lg hover:shadow-cyan-700/50">
-          <img className={style.img} src="g1.jpg" alt="" />
-          <p className="text-lg font-semibold my-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
-            magni voluptates ea omnis nisi eveniet.
-          </p>
-          <button className={style.button}>Read More </button>
-        </div>
-        <div className="p-2 border bg-white rounded hover:shadow-lg hover:shadow-cyan-700/50">
-          <img className={style.img} src="g2.jpg" alt="" />
-          <p className="text-lg font-semibold my-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
-            magni voluptates ea omnis nisi eveniet.
-          </p>
-
-          <button className={style.button}>Read More </button>
-        </div>
-        <div className="p-2 border bg-white rounded hover:shadow-lg hover:shadow-cyan-700/50">
-          <img className={style.img} src="g3.jpg" alt="" />
-          <p className="text-lg font-semibold my-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
-            magni voluptates ea omnis nisi eveniet.
-          </p>
-          <button className={style.button}>Read More </button>
-        </div>
-        <div className="p-2 border bg-white rounded hover:shadow-lg hover:shadow-cyan-700/50">
-          <img className={style.img} src="g4.jpg" alt="" />
-          <p className="text-lg font-semibold my-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
-            magni voluptates ea omnis nisi eveniet.
-          </p>
-          <button className={style.button}>Read More </button>
-        </div>
-        <div className="p-2 border bg-white rounded hover:shadow-lg hover:shadow-cyan-700/50">
-          <img className={style.img} src="g4.jpg" alt="" />
-          <p className="text-lg font-semibold my-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
-            magni voluptates ea omnis nisi eveniet.
-          </p>
-          <button className={style.button}>Read More </button>
-        </div>
-        <div className="p-2 border bg-white rounded hover:shadow-lg hover:shadow-cyan-700/50">
-          <img className={style.img} src="g4.jpg" alt="" />
-          <p className="text-lg font-semibold my-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
-            magni voluptates ea omnis nisi eveniet.
-          </p>
-          <button className={style.button}>Read More </button>
-        </div>
-        <div className="p-2 border bg-white rounded hover:shadow-lg hover:shadow-cyan-700/50">
-          <img className={style.img} src="g4.jpg" alt="" />
-          <p className="text-lg font-semibold my-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
-            magni voluptates ea omnis nisi eveniet.
-          </p>
-          <button className={style.button}>Read More </button>
-        </div>
-        <div className="p-2 border bg-white rounded hover:shadow-lg hover:shadow-cyan-700/50">
-          <img className={style.img} src="g4.jpg" alt="" />
-          <p className="text-lg font-semibold my-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
-            magni voluptates ea omnis nisi eveniet.
-          </p>
-          <button className={style.button}>Read More </button>
-        </div>
-        <div className="p-2 border bg-white  rounded hover:shadow-lg hover:shadow-cyan-700/50">
-          <img className={style.img} src="g1.jpg" alt="" />
-          <p className="text-lg font-semibold my-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
-            magni voluptates ea omnis nisi eveniet.
-          </p>
-          <button className={style.button}>Read More </button>
-        </div>
-        <div className="p-2 border bg-white rounded hover:shadow-lg hover:shadow-cyan-700/50">
-          <img className={style.img} src="g2.jpg" alt="" />
-          <p className="text-lg font-semibold my-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
-            magni voluptates ea omnis nisi eveniet.
-          </p>
-
-          <button className={style.button}>Read More </button>
-        </div>
-        <div className="p-2 border bg-white rounded hover:shadow-lg hover:shadow-cyan-700/50">
-          <img className={style.img} src="g3.jpg" alt="" />
-          <p className="text-lg font-semibold my-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
-            magni voluptates ea omnis nisi eveniet.
-          </p>
-          <button className={style.button}>Read More </button>
-        </div>
-        <div className="p-2 border bg-white rounded hover:shadow-lg hover:shadow-cyan-700/50">
-          <img className={style.img} src="g3.jpg" alt="" />
-          <p className="text-lg font-semibold my-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
-            magni voluptates ea omnis nisi eveniet.
-          </p>
-          <button className={style.button}>Read More </button>
-        </div>
+        {blogs?.map((a) => (
+          <div
+            key={a?._id}
+            className="p-2 border bg-white pb-5  rounded hover:shadow-lg hover:shadow-cyan-700/50"
+          >
+            <img className={style.img} src={a?.image} alt="" />
+            <p className="text-lg font-semibold my-6">{a?.title}</p>
+            <Link href={`/blog/${a?.permalink}`} className={style.button}>
+              Read More{" "}
+            </Link>
+          </div>
+        ))}
       </div>
     </div>
   );

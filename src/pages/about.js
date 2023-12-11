@@ -46,6 +46,10 @@ const AboutUs = () => {
             Make the plumbing world a better place! We are always looking for
             ways to improve, so thanks again for your business, support and
             feedback.
+            <br /> <br /> <br /> <br />
+            <button className="bg-green-500 rounded text-white font-bold block m-auto text-xl px-10 py-2">
+              Call Now
+            </button>
           </div>
         </div>
       </Layout>

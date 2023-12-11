@@ -1,11 +1,11 @@
-import OurBlogs from "@/components/ourblogs/ourBlogs";
-import Layout from "@/components/shared/layout/layout";
+import Layout from "@/components/shared/dashboard/layout";
+import BlogsList from "@/components/tables/blogs";
 import { Pagination } from "antd";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import categories from "./../../public/category.json";
+import categories from "../../../public/category.json";
 
-const Blogs = () => {
+const BlogList = () => {
   const [orders, setOrders] = useState([]);
   const [total, setTotal] = useState(0);
   const [startIndex, setStartIndex] = useState(1);
@@ -40,17 +40,10 @@ const Blogs = () => {
   };
 
   return (
-    <div className="bg-gray-200">
+    <div>
       <Layout>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br className="sm:block hidden" />
-        <br className="sm:block hidden" />
-        <div className="flex justify-between bg-white sm:w-[1280px] h-[60px] p-3 m-auto">
-          <h1 className="text-2xl font-bold">Blog List</h1>
+        <div className="flex justify-between">
+          <h1 className="text-xl font-bold">Blog List</h1>
           <select
             className="p-1 border rounded"
             onChange={(e) => onselct(e.target.value)}
@@ -63,8 +56,13 @@ const Blogs = () => {
             ))}
           </select>
         </div>
-
-        <OurBlogs blogs={orders} loading={loading} />
+        <BlogsList
+          blogs={orders}
+          loading={loading}
+          startIndex={startIndex}
+          reload={reload}
+          setReload={setReload}
+        />
         <br />
         <Pagination
           showTotal={(total, range) =>
@@ -74,11 +72,10 @@ const Blogs = () => {
           pageSize={10}
           total={total}
           onChange={onChange}
-          className="sm:w-3/12  m-auto"
         />
       </Layout>
     </div>
   );
 };
 
-export default Blogs;
+export default BlogList;

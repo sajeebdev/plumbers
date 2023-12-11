@@ -35,7 +35,7 @@ const Categories = () => {
                   alt=""
                 /> */}
                 <h2 className="p-3 text-xl  font-bold text-center mb-2">
-                  1. Water Drainage Line
+                  Water Drainage Line
                 </h2>
                 <p className="text-center ">
                   &quot;Navigating Water, Easing Drains&quot;
@@ -44,7 +44,7 @@ const Categories = () => {
 
               <div className="w-[250px]   bg-white mb-4 border border-gray-600  hover:bg-white hover:border-white cursor-pointer">
                 <h2 className="p-3 text-xl  font-bold text-center mb-2">
-                  2. Sewage Upgrades and Repairs
+                  Sewage Upgrades and Repairs
                 </h2>
                 <p className="text-center ">
                   &quot;Upgrade Your Flow, Repair with Pro!&quot;
@@ -53,7 +53,7 @@ const Categories = () => {
 
               <div className="w-[250px]   bg-white mb-4 border border-gray-600  hover:bg-white hover:border-white cursor-pointer">
                 <h2 className="p-3 text-xl  font-bold text-center mb-2">
-                  3. Installation of Water Radiators
+                  Installation of Water Radiators
                 </h2>
                 <p className="text-center ">
                   &quot;Precision Installation, Warmth at Your Fingertips&quot;
@@ -61,7 +61,7 @@ const Categories = () => {
               </div>
               <div className="w-[250px]   bg-white mb-4 border border-gray-600  hover:bg-white hover:border-white cursor-pointer">
                 <h2 className="p-3 text-xl  font-bold text-center mb-2">
-                  4. Boilers
+                  Boilers
                 </h2>
                 <p className="text-center ">
                   &quot;Boiling Brilliance, Heating Excellence&quot;
@@ -69,7 +69,7 @@ const Categories = () => {
               </div>
               <div className="w-[250px]   bg-white mb-4 border border-gray-600  hover:bg-white hover:border-white cursor-pointer">
                 <h2 className="p-3 text-xl  font-bold text-center mb-2">
-                  5. Dishwashing
+                  Dishwashing
                 </h2>
                 <p className="text-center ">
                   &quot;Sparkling Clean, Dishwashing Delight, Every Night.&quot;
@@ -77,7 +77,7 @@ const Categories = () => {
               </div>
               <div className="w-[250px]   bg-white mb-4 border border-gray-600  hover:bg-white hover:border-white cursor-pointer">
                 <h2 className="p-3 text-xl  font-bold text-center mb-2">
-                  6. Toilet and Valve Repairs
+                  Toilet and Valve Repairs
                 </h2>
                 <p className="text-center ">
                   &quot;Flush Away Worries, Repair with Precision.&quot;
@@ -85,7 +85,7 @@ const Categories = () => {
               </div>
               <div className="w-[250px]   bg-white mb-4 border border-gray-600  hover:bg-white hover:border-white cursor-pointer">
                 <h2 className="p-3 text-xl  font-bold text-center mb-2">
-                  7. Installation
+                  Installation
                 </h2>
                 <p className="text-center ">
                   &quot;Crafting Comfort, One Installation at a Time.&quot;
@@ -93,7 +93,7 @@ const Categories = () => {
               </div>
               <div className="w-[250px]   bg-white mb-4 border border-gray-600  hover:bg-white hover:border-white cursor-pointer">
                 <h2 className="p-3 text-xl  font-bold text-center mb-2">
-                  8. Emergency Services
+                  Emergency Services
                 </h2>
                 <p className="text-center ">
                   &quot;24/7 Plumbing Prowess, Your Emergency Partner.&quot;
@@ -101,7 +101,7 @@ const Categories = () => {
               </div>
               <div className="w-[250px]   bg-white mb-4 border border-gray-600  hover:bg-white hover:border-white cursor-pointer">
                 <h2 className="p-3 text-xl  font-bold text-center mb-2">
-                  9. Repairs and Maintenance
+                  Repairs and Maintenance
                 </h2>
                 <p className="text-center ">
                   &quot;Meticulous Repairs, Proactive Maintenance.&quot;
@@ -109,7 +109,7 @@ const Categories = () => {
               </div>
               <div className="w-[250px]   bg-white mb-4 border border-gray-600  hover:bg-white hover:border-white cursor-pointer">
                 <h2 className="p-3 text-xl  font-bold text-center mb-2">
-                  10. Drain Cleaning
+                  Drain Cleaning
                 </h2>
                 <p className="text-center ">
                   &quot;Clearing the Way, Drain Cleaning, Your Path to
@@ -118,7 +118,7 @@ const Categories = () => {
               </div>
               <div className="w-[250px]   bg-white mb-4 border border-gray-600  hover:bg-white hover:border-white cursor-pointer">
                 <h2 className="p-3 text-xl  font-bold text-center mb-2">
-                  11. Replacement
+                  Replacement
                 </h2>
                 <p className="text-center ">
                   &quot;Upgrade Today, Replace with Confidence.&quot;
@@ -126,7 +126,7 @@ const Categories = () => {
               </div>
               <div className="w-[250px]   bg-white mb-4 border border-gray-600  hover:bg-white hover:border-white cursor-pointer">
                 <h2 className="p-3 text-xl  font-bold text-center mb-2">
-                  12. Inspection and Replacement
+                  Inspection and Replacement
                 </h2>
                 <p className="text-center ">
                   &quot;Inspecting Excellence, Replacing with Precision.&quot;
@@ -134,7 +134,7 @@ const Categories = () => {
               </div>
               <div className="w-[250px]   bg-white mb-4 border border-gray-600  hover:bg-white hover:border-white cursor-pointer">
                 <h2 className="p-3 text-xl  font-bold text-center mb-2">
-                  13. Toilet Repair
+                  Toilet Repair
                 </h2>
                 <p className="text-center ">
                   &quot;Toilet Troubles? We Have the Fix. Flush Away Problems,
@@ -143,7 +143,7 @@ const Categories = () => {
               </div>
               <div className="w-[250px]   bg-white mb-4 border border-gray-600  hover:bg-white hover:border-white cursor-pointer">
                 <h2 className="p-3 text-xl  font-bold text-center mb-2">
-                  14. Leak Repairs
+                  Leak Repairs
                 </h2>
                 <p className="text-center ">
                   &quot;Leaks Linger? We Make them Vanish. Preserve Your
@@ -152,7 +152,7 @@ const Categories = () => {
               </div>
               <div className="w-[250px]   bg-white mb-4 border border-gray-600  hover:bg-white hover:border-white cursor-pointer">
                 <h2 className="p-3 text-xl  font-bold text-center mb-2">
-                  15. Pipe Repair and Replacement
+                  Pipe Repair and Replacement
                 </h2>
                 <p className="text-center ">
                   &quot;Precision Pipes, Seamless Solutions.&quot;
@@ -160,7 +160,7 @@ const Categories = () => {
               </div>
               <div className="w-[250px]   bg-white mb-4 border border-gray-600  hover:bg-white hover:border-white cursor-pointer">
                 <h2 className="p-3 text-xl  font-bold text-center mb-2">
-                  16. Water Heater Services
+                  Water Heater Services
                 </h2>
                 <p className="text-center ">
                   &quot;Heating Happiness, One Water Heater at a Time.&quot;
@@ -168,7 +168,7 @@ const Categories = () => {
               </div>
               <div className="w-[250px]   bg-white mb-4 border border-gray-600  hover:bg-white hover:border-white cursor-pointer">
                 <h2 className="p-3 text-xl  font-bold text-center mb-2">
-                  17. Sewer Repair
+                  Sewer Repair
                 </h2>
                 <p className="text-center ">
                   &quot;Navigate Sewer Issues, Repair with Precision.&quot;
@@ -176,7 +176,7 @@ const Categories = () => {
               </div>
               <div className="w-[250px]   bg-white mb-4 border border-gray-600  hover:bg-white hover:border-white cursor-pointer">
                 <h2 className="p-3 text-xl  font-bold text-center mb-2">
-                  18. Every plumbing Services
+                  Every plumbing Services
                 </h2>
                 <p className="text-center ">
                   &quot;Complete Plumbing Care, Every Service Under One

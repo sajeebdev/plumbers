@@ -17,3 +17,16 @@
     transform: translateY(0);
   }
 }
+.ant-btn {
+  background: rgb(252, 97, 13);
+}
+
+.ant-upload-list-item-container {
+  width: 150px !important;
+  height: 150px !important;
+}
+
+.ant-upload-select {
+  width: 150px !important;
+  height: 150px !important;
+}

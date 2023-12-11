@@ -57,7 +57,6 @@ const Contact = () => {
           <h1 className="text-center text-3xl">Contact Us</h1>
           <br />
           <br />
-
           <form onSubmit={handleSubmit}>
             <Input
               placeholder="Your Name"
@@ -94,7 +93,11 @@ const Contact = () => {
             </button>
           </form>
           <br />
+          <p className="text-center">-- Or --</p>
           <br />
+          <button className="bg-green-500 rounded text-white font-bold block m-auto text-xl px-10 py-2">
+            Call Now
+          </button>
           <br />
         </div>
       </Layout>

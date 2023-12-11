@@ -9,9 +9,11 @@
 }
 .button {
   background-color: red;
-  padding: 10px 40px;
+  padding: 10px 30px;
   border-radius: 20px;
+  margin-top: auto;
   color: white;
+  margin-bottom: 10px;
 }
 :hover.button {
   background-color: blue;
@@ -19,4 +21,5 @@
 }
 .img {
   height: 220px;
+  width: 100%;
 }

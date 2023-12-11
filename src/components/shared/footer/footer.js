@@ -12,7 +12,7 @@ import { IoLogoWhatsapp } from "react-icons/io";
 const Footer = () => {
   return (
     <div className=" bg-cyan-900">
-      <div class="w-[1280px] m-auto pt-16 mt-16  grid grid-cols-3 items-center gap-10">
+      <div class="sm:w-[1280px] m-auto pt-16 mt-16  grid sm:grid-cols-3  grid-cols-1 items-center gap-10">
         <div class="w-[320px] text-white text-start p-2">
           <img className="block m-auto" src="/logo.png" />
           <p className="">

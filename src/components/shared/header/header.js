@@ -48,13 +48,13 @@ const Header = () => {
             : "stickyNav bg-cyan-800 text-white"
         }   `}
       >
-        <div className="h-[90px] w-[1280px] m-auto  flex items-center justify-between">
+        <div className="h-[90px] sm:w-[1280px] m-auto  flex items-center justify-between">
           <div>
             <Link href="/">
               <img className="w-[180px] p-6" src="/logo.png" />
             </Link>
           </div>
-          <div>
+          <div className="hidden sm:block">
             <ul
               className={` flex items-center justify-between gap-10 text-base font-semibold `}
             >
